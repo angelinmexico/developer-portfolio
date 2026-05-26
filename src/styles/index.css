@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#fdf3e0] text-[#1e2a2e];
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#e5a12e] text-white px-6 py-2 rounded-lg hover:bg-[#cc881e] transition-colors;
+  }
+}

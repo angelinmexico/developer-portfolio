@@ -4,7 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
-  base: "/developer-portfolio",
   plugins: [react(), tailwindcss()],
   server: {
     host: '0.0.0.0',

@@ -13,11 +13,11 @@ const queryClient = new QueryClient({
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <App />
-        <Toaster position="top-right" />
-      </BrowserRouter>
-    </QueryClientProvider>
+  <QueryClientProvider client={queryClient}>
+    {/* Add basename here */}
+    <BrowserRouter basename="/developer-portfolio">
+      <App />
+      <Toaster position="top-right" />
+    </BrowserRouter>
+  </QueryClientProvider>
 )
